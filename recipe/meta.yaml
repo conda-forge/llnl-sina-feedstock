@@ -6,7 +6,7 @@ package:
     version: {{ version }}
 
 source:
-    url: https://github.com/LLNL/Sina/archive/{{ version }}.tar.gz
+    url: https://github.com/LLNL/Sina/archive/v{{ version }}.tar.gz
     sha256: a62d620d76904bcbc5cf5966e6526c4b5456a664accae3cd521acd426b99f630
 
 build:
