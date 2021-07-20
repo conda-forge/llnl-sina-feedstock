@@ -21,10 +21,10 @@ build:
  
 requirements:
   host:
-    - python >=2.7
+    - python >=3.6
     - pip
   run:
-    - python >=2.7
+    - python >=3.6
     - six
     - sqlalchemy
     - enum34
