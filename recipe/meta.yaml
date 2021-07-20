@@ -24,6 +24,7 @@ requirements:
     - python >=2.7
     - pip
   run:
+    - python >=2.7
     - six
     - sqlalchemy
     - enum34
