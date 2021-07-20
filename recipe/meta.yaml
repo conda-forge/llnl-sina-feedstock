@@ -28,7 +28,7 @@ requirements:
     - six
     - sqlalchemy
     - enum34
-    - ujson
+    - orjson
 
 test:
   imports:
