@@ -1,5 +1,5 @@
 {% set name = "llnl-sina" %}
-{% set version = "1.11.0" %}
+{% set version = "1.12.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/LLNL/Sina/archive/v{{ version }}.tar.gz
-  sha256: d23bbfc8cd1a08e750085a1a8bad32bdfabfaced2e613bdbde7617f8dc308e65
+  sha256: 232ce35144fc9cd8d8f065872225797ce18c2c4455f9591ac3b85a507d34d640
 
 build:
   number: 0
