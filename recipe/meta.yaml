@@ -11,6 +11,7 @@ source:
 
 build:
   number: 0
+  noarch: python
   script:
     - cd python
     - {{ PYTHON }} -m pip install . -vv
@@ -25,8 +26,7 @@ requirements:
   run:
     - python >=3.6
     - six
-    - sqlalchemy
-    - enum34
+    - sqlalchemy <2
     - orjson
 
 test:
