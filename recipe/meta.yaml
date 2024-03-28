@@ -1,5 +1,5 @@
 {% set name = "llnl-sina" %}
-{% set version = "1.13.0" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/LLNL/Sina/archive/v{{ version }}.tar.gz
-  sha256: 974a3a443313e1ebf6a54d20d819c2450ee06cee073d14004a00b1148890985f
+  sha256: ccf366cb7aff365510503ca4e46685ba96524e77dfa74a91c5b981c25aa2e749 
 
 build:
   number: 0
@@ -26,8 +26,7 @@ requirements:
   run:
     - python >=3.6
     - six
-    - sqlalchemy
-    - enum34
+    - sqlalchemy <2
     - orjson
 
 test:
