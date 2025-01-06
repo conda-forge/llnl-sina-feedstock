@@ -10,7 +10,7 @@ source:
   sha256: ccf366cb7aff365510503ca4e46685ba96524e77dfa74a91c5b981c25aa2e749 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - cd python
@@ -21,10 +21,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - six
     - sqlalchemy <2
     - orjson
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/LLNL/Sina
